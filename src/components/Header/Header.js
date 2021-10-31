@@ -24,9 +24,9 @@ const Header = () => {
                     <Link style={{color:'white', fontWeight:'bold',textDecoration:'none'}} to='/tourplace'>Tour Place</Link> 
                 </Nav.Link>
                 
-                <Nav.Link>
+                {/* <Nav.Link>
                     <Link style={{color:'white',fontWeight:'bold', textDecoration:'none'}} to='/mybooking'>My Order{selectedBooking.length}</Link> 
-                </Nav.Link>
+                </Nav.Link> */}
                 <NavDropdown style={{color:'white',fontWeight:'bold', }} title=" More" id="basic-nav-dropdown">
                     <NavDropdown.Item href="">
                       <Nav.Link>

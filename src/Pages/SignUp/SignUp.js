@@ -16,6 +16,9 @@ const SignUp = () => {
       history.push(redirect_uri);
       console.log(result);
   })
+  .catch(error=>{
+    console.log(error.message);
+  })
   }
     return (
         <div>
