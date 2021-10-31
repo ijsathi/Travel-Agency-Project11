@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -66,6 +66,9 @@ const MyBooking = () => {
             <div> <h1 className='text-danger text-center'>No Booking Found</h1></div>
             }
             </div>
+            <Nav.Link>
+                    <Link className='booking pt-5' style={{color:'white',fontWeight:'bold', textDecoration:'none',}} to='/addedservice'><button className='container '>Add New Place</button>{selectedBooking.length}</Link> 
+                    </Nav.Link>
             
             <Footer></Footer>
         </div>

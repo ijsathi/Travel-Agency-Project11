@@ -19,6 +19,7 @@ import MyBooking from './Pages/MyOrder/MyBooking';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Thanks from './Pages/Thanks/Thanks';
 import Form from './Pages/Form/Form';
+import AddedService from './components/AddedService/AddedService';
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
           </Route>
           <Route path='/form'>
             <Form></Form>
+          </Route>
+          <Route path='/addedservice'>
+            <AddedService></AddedService>
           </Route>
          <Route path="*">
            <NotFound></NotFound>

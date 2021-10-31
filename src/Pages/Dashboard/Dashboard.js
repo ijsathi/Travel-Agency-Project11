@@ -9,8 +9,13 @@ const Dashboard = () => {
     const {selectedBooking} = useAuth();
     return (
         <div>
-            <Header></Header><Nav.Link>
+            <Header></Header>
+
+                   <Nav.Link>
                     <Link className='booking pt-5' style={{color:'white',fontWeight:'bold', textDecoration:'none',}} to='/mybooking'><button className='container '>My Booking List</button>{selectedBooking.length}</Link> 
+                    </Nav.Link>
+                    <Nav.Link>
+                    <Link className='booking pt-5' style={{color:'white',fontWeight:'bold', textDecoration:'none',}} to='/addedservice'><button className='container '>Add New Place</button>{selectedBooking.length}</Link> 
                     </Nav.Link>
             
             <Footer></Footer>
