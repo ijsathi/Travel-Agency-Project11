@@ -27,7 +27,7 @@ const MyBooking = () => {
 
                     // <h1>{booking.name}</h1>
                     <Container style={{paddingTop:'50px'}}>
-              <Row>
+              <Row key={booking._id}>
                 <Col>
                 <img src={booking.img} className="card-img-top h-100 w-100 " alt="" />
                 </Col>
@@ -45,7 +45,7 @@ const MyBooking = () => {
                             </Link><hr />
                             <Row>
                               <Col>
-                              <button className=' detail-btm' onClick={() => remove (booking.id)}><i class="fas fa-trash"></i> Remove </button></Col>
+                              <button className=' detail-btm' onClick={() => remove (booking._id)}><i class="fas fa-trash"></i> Remove </button></Col>
                             </Row>
                 </Col>
                 <hr />

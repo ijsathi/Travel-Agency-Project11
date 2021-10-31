@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import {  Col, Container, Nav, Row,  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -10,9 +10,16 @@ const Dashboard = () => {
     return (
         <div>
             <Header></Header>
-            <Nav.Link>
-                    <Link style={{color:'white',fontWeight:'bold', textDecoration:'none'}} to='/mybooking'><button>My Order</button>{selectedBooking.length}</Link> 
-            </Nav.Link>
+            <Container>
+                <Row >
+                    <Col style={{ borderRight:'3px solid red'}}>
+                    <Nav.Link>
+                    <Link style={{color:'white',fontWeight:'bold', textDecoration:'none',}} to='/mybooking'><button>My Order</button>{selectedBooking.length}</Link> 
+                    </Nav.Link>
+                    </Col>
+                </Row>
+            </Container>
+            
             <Footer></Footer>
         </div>
     );

@@ -17,6 +17,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Opinion from './Pages/Opinion/Opinion';
 import MyBooking from './Pages/MyOrder/MyBooking';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import Thanks from './Pages/Thanks/Thanks';
 
 function App() {
   return (
@@ -54,6 +55,9 @@ function App() {
           <PrivateRoute path='/dashboard'>
             <Dashboard></Dashboard>
           </PrivateRoute>
+          <Route path='/thanks'>
+            <Thanks> </Thanks>
+          </Route>
          <Route path="*">
            <NotFound></NotFound>
          </Route>

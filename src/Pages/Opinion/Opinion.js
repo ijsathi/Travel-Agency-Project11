@@ -31,7 +31,7 @@ const Opinion = () => {
     <label for="subject">Opinion</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
-    <Link to='/'><input type="submit"  value="Submit"/></Link>
+    <Link to='/thanks'><input type="submit"  value="Submit"/></Link>
 
   </form>
   </div>

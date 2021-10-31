@@ -16,7 +16,7 @@ const Header = () => {
                 <Navbar.Brand href="#home"><img style={{color:'white'}} className=' logo' src={headerLogo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse  className='justify-text-end fw-normal'>
-                <Nav className="me-auto ">
+                <Nav className="ms-auto ">
                 <Nav.Link>
                 <Link style={{color:'white', fontWeight:'bold', textDecoration:'none'}} to='/home'>Home</Link>
                 </Nav.Link>
@@ -27,7 +27,7 @@ const Header = () => {
                 {/* <Nav.Link>
                     <Link style={{color:'white',fontWeight:'bold', textDecoration:'none'}} to='/mybooking'>My Order{selectedBooking.length}</Link> 
                 </Nav.Link> */}
-                <NavDropdown style={{color:'white',fontWeight:'bold', }} title=" More" id="basic-nav-dropdown">
+                <NavDropdown className='' style={{color:'white',fontWeight:'bold', }} title=" More" id="basic-nav-dropdown">
                     <NavDropdown.Item href="">
                       <Nav.Link>
                     <Link style={{color:'black',fontWeight:'bold', textDecoration:'none'}} to='/aboutus'>About Us</Link> 

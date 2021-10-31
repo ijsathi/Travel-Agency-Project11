@@ -6,7 +6,7 @@ const UseCart = () => {
     const {uid} = user;
     const [selectedBooking, setSelectedBooking] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/cart/${uid}`)
+        fetch(`https://fast-headland-27081.herokuapp.com/cart/${uid}`)
         .then(res=>res.json())
         .then(data=>{
             if(data.length){
@@ -19,11 +19,11 @@ const UseCart = () => {
         const isHave = selectedBooking.find(select => select._id === dt._id);
         delete dt._id;
         dt.uid = uid;
-        dt.status = 'pending'
+        dt.status = 'pending'; 
         if (isHave) { 
             alert("Already Booked!! Thanks For Booking......")
         } else {
-            fetch('http://localhost:5000/booking/add', {
+            fetch('https://fast-headland-27081.herokuapp.com/booking/add', {
                 method: "POST",
                 headers: {"content-type": "application/json"},
                 body: JSON.stringify(dt)
@@ -38,8 +38,21 @@ const UseCart = () => {
         }
     }
     function remove (id){
-        const selectAfterRemove = selectedBooking.filter((select)=> !(select.id === id));
-            setSelectedBooking(selectAfterRemove)
+        // const selectAfterRemove = selectedBooking.filter((select)=> !(select._id === id));
+        const url = `https://fast-headland-27081.herokuapp.com/booking/add/${id}`;
+        fetch(url,{
+            method: 'DELETE'
+        })
+        .then(res=> res.json())
+        .then(data=>{
+            if(data.deletedCount === 1){
+                const selectAfterRemove = selectedBooking.filter((select)=> !(select._id === id));
+                setSelectedBooking(selectAfterRemove)
+            }else{
+                alert('Something Wrong!')
+            }
+        })
+            // setSelectedBooking(selectAfterRemove)
     }
     return {addToCart, selectedBooking, remove };
 };
