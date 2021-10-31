@@ -44,10 +44,15 @@ const OurServices = () => {
                                  </Row>
                                  <Row><hr /></Row>
                                  <Row className='booking'>
-                                     <Col><button onClick={() => addToCart(dt)}><i className="far fa-flag"></i> Booking Now</button></Col>
-                                    <Col className='details-btn'> <Link to={`/more/${dt._id}`}>
-                                    <button>View Details <i class="fas fa-info-circle"></i></button>
-                            </Link></Col>
+                                     <Col>
+                                     <button onClick={() => addToCart(dt)}><i className="far fa-flag"></i> Booking Now</button> <br />
+                                     <Link to={`/more/${dt._id}`}>
+                                    <button className='sm-12'>View Details <i class="fas fa-info-circle"></i></button>
+                                    </Link>
+                                     </Col>
+                                    {/* <Col className='details-btn'> <Link to={`/more/${dt._id}`}>
+                                    <button className='sm-12'>View Details <i class="fas fa-info-circle"></i></button>
+                            </Link></Col> */}
                                  </Row>
                              </Container>
                             </div>

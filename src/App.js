@@ -18,6 +18,7 @@ import Opinion from './Pages/Opinion/Opinion';
 import MyBooking from './Pages/MyOrder/MyBooking';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Thanks from './Pages/Thanks/Thanks';
+import Form from './Pages/Form/Form';
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
           </PrivateRoute>
           <Route path='/thanks'>
             <Thanks> </Thanks>
+          </Route>
+          <Route path='/form'>
+            <Form></Form>
           </Route>
          <Route path="*">
            <NotFound></NotFound>

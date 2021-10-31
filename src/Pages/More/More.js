@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -35,7 +36,9 @@ const More = () => {
                 <p><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></p>
                 </Col>
                 <Col className='booking'>
-                <button onClick={() => addToCart(service)}> Booking Confirm <i class="far fa-check-circle"></i></button>
+               <Link to='/form'>
+               <button onClick={() => addToCart(service)}> Booking Confirm <i class="far fa-check-circle"></i></button>
+               </Link>
                 </Col><hr />
               <p className="text-center fw-bold">{service.time}</p>
               

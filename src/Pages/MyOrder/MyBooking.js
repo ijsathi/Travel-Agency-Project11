@@ -17,6 +17,9 @@ const MyBooking = () => {
               <div className='text-center p-3 fw-bold'>
                 <h2>Total {selectedBooking.length} Place Added</h2>
                 <h4>Total Cost : {totalPrice}</h4>
+                <Link to='/form'>
+                  <button>Booking Confirm</button>
+                </Link>
               </div>:
               <div className="text-center"><h1>No Cost</h1></div>
             }
@@ -40,9 +43,10 @@ const MyBooking = () => {
                 <p><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></p>
                 </Col>
                 <Col>
-                <Link className='booking1' to={`/more/${booking._id}`}>
+                <div className='booking1' >
                                     <button>View Details <i class="fas fa-info-circle"></i></button>
-                            </Link><hr />
+                            </div><hr />
+                           
                             <Row>
                               <Col>
                               <button className=' detail-btm' onClick={() => remove (booking._id)}><i class="fas fa-trash"></i> Remove </button></Col>

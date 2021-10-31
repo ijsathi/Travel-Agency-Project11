@@ -27,7 +27,7 @@ const Header = () => {
                 {/* <Nav.Link>
                     <Link style={{color:'white',fontWeight:'bold', textDecoration:'none'}} to='/mybooking'>My Order{selectedBooking.length}</Link> 
                 </Nav.Link> */}
-                <NavDropdown className='' style={{color:'white',fontWeight:'bold', }} title=" More" id="basic-nav-dropdown">
+                <NavDropdown className='' style={{color:'white',fontWeight:'bold' }} title=" More" id="basic-nav-dropdown">
                     <NavDropdown.Item href="">
                       <Nav.Link>
                     <Link style={{color:'black',fontWeight:'bold', textDecoration:'none'}} to='/aboutus'>About Us</Link> 
@@ -43,8 +43,7 @@ const Header = () => {
                     <Link style={{color:'black',fontWeight:'bold', textDecoration:'none'}} to='/opinion'>Share Your Opinion</Link> 
                 </Nav.Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <Link style={{color:'black',fontWeight:'bold', textDecoration:'none'}} to='/others'>Others</Link> 
+                    
                 </NavDropdown>
                 </Nav>
                 {!contexts.user.displayName ? (
@@ -60,7 +59,7 @@ const Header = () => {
                     to="/dashboard"
                     className="text-white fw-bold"
                   >
-                    Dashboard
+                    Booking List
                   </Nav.Link>
 
                   <NavDropdown
