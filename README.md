@@ -4,7 +4,7 @@
 ### Provide the tourist market with the quality personal required by the tourism industry. Produce expeditions and memories that would satisfy each and every single of the customers. Evaluate current cultural, economic, and social issues affecting the tourism and travel industry.
 
 ## Code Splitting(private)
-https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-ijsathi
+https://github.com/ijsathi/Travel-Agency-Project11
 
 ### why travel with us?
 1. Incredible Value
