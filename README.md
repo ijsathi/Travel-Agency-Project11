@@ -3,8 +3,10 @@
 # Our Mission
 ### Provide the tourist market with the quality personal required by the tourism industry. Produce expeditions and memories that would satisfy each and every single of the customers. Evaluate current cultural, economic, and social issues affecting the tourism and travel industry.
 
-## Code Splitting(private)
+## Code Splitting
 https://github.com/ijsathi/Travel-Agency-Project11
+## GitHub Server Link
+https://github.com/ijsathi/Travel-Agency-Project11-server
 
 ### why travel with us?
 1. Incredible Value
